@@ -15,8 +15,8 @@ setlocal EnableDelayedExpansion
 set elv=0
 
 echo Target Host = %host% >>%logfile%
-echo ---- Target Host = %host% przerwy %time%---->>%logfile_fail%
-echo Target Host = ----%host% przerwy---->>%logfile_fail_2%
+echo ---- Target Host = %host% downtimes %time%---->>%logfile_fail%
+echo Target Host = ----%host% downtimes ---->>%logfile_fail_2%
 for /f "tokens=*" %%A in ('ping %host% -n 1') do (echo (%%A>>%logfile% && GOTO Ping)
 
 :Ping
