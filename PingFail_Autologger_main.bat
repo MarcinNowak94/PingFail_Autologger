@@ -2,7 +2,7 @@
 @echo off
 
 if not exist mkdir Logs
-set dir_name=Logi\%date:~3,2%-%date:~6,4%\Log_%date:~0,2%-%date:~3,2%-%date:~6,4%
+set dir_name=Logs\%date:~3,2%-%date:~6,4%\Log_%date:~0,2%-%date:~3,2%-%date:~6,4%
 mkdir %dir_name%
 set  host=8.8.8.8
 set logfile=%dir_name%\Ping_test.log
